@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Login</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <nav>
+                <button class="header-button" onclick="navigate('home')">Início</button>
+                <button class="header-button" onclick="navigate('contact')">Contato</button>
+                <button class="header-button" onclick="navigate('photos')">Fotos</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="ferrari_logo.png" alt="Logo da Ferrari">
+            <span class="logo-text">Ferrari</span>
+        </div>
+
+        <form id="loginForm">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="validateForm()">Login</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
